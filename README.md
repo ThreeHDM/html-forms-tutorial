@@ -123,11 +123,15 @@ Antes de continuar, probá tu formulario. Verás que en webhoo.site se capturar�
 
 Ya dijimos que los formularios son interfaces que permiten realizar peticiones HTTP. Pero hay diferentes tipos de petición HTTP que dependen de la acción que queremos realizar.
 
-Por default, los formularios realizan peticiones de tipo `GET`. Si no especificamos nada la información se enviará así.
+Por default, los formularios realizan peticiones de tipo `GET`, que requieren información al servidor. Si no especificamos nada la información se enviará así.
 
 IMPORTANTE: Las peticiones de tipo `GET` muestran la información enviada en la URL.
 
+Otro método de petición HTTP es `POST` que, como su nombre lo indica, envía información al servidor.
+
 Para especificar el tipo de petición HTTP que queremos que realice nuestro formuario debemos agregar el atributo `method` dentro de la etiqueta `<form>`.
+
+En la [documentación de MDN](https://developer.mozilla.org/es/docs/Web/HTTP/Methods) podemos aprender sobre todos los tipos de petición HTTP.
 
 ```html
 <form action="https://webhook.site/9a687d56-325e-4230-be3f-81c8adb25f91" method="POST">
