@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Form</title>
+  </head>
+  <body>
+    
+    <H2>Checkboxes and Radiobutton</H2>
+    <form action="https://webhook.site/9a687d56-325e-4230-be3f-81c8adb25f91" method="POST" enctype="multipart/form-data">
+        <div>
+        <h3>Comida Favorita (CHECKBOX)</h3>
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana" value="banana">
+            </div>
+            <div>
+                <label for="manzana">Manzana</label>
+                <input type="checkbox" name="manzana" id="manzana" value="manzana">
+            </div>
+        </div>
+        <div>
+            <h3>Género (RADIOBUTTON)</h3>
+            <div>
+                <label for="genero">Masculino</label>
+                <input type="radio" name="genero" id="masculino" value="masculino"> 
+            </div>
+            <div>
+                <label for="genero">Femenino</label>
+                <input type="radio" name="genero" id="femenino" value="femenino">
+            </div>
+            <div>
+                <label for="genero">Otro</label>
+                <input type="radio" name="genero" id="otro" value="otro">
+            </div>
+        </div>
+        <div>
+            <h3>INPUT HIDDEN</h3>
+            <input type="hidden" name="oculto" value="escondido">
+        </div>
+        <div>
+            <h3>INPUT FILE</h3>
+            <input type="file" name="archivo" id="archivo">
+        </div>
+        <div>
+            <h3>INPUT PHONE</h3>
+            <input type="tel" name="telefono" id="telefono">
+        </div>
+        <H2>Otros elementos de los FORMS</H2>
+        <div>
+            <h3>SELECT</h3>
+            <div>
+                <label for="colorojos">Color de ojos</label>
+                <select name="colorojos" id="colorojos">
+                    <option value="marrones">Marrones</option>
+                    <option value="verdes">Verdes</option>
+                    <option value="azules">Azules</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <h3>TEXTAREA</h3>
+            <div>
+                <label for="bio">Biografía</label>
+                <textarea name="biografia" id="biografia" cols="30" rows="10">En un agujero en el suelo, vivía un hobbit. No un agujero húmedo, sucio, repugnante, con restos de gusanos y olor a fango, ni tampoco un agujero seco, desnudo y arenoso...
+                </textarea>
+            </div>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+
+    
+
+
+
+     
+  </body>
+</html>
