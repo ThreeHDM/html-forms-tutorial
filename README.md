@@ -290,3 +290,11 @@ Despliega un menú selector. Por default podemos elegir solo una opción de las 
 ``` 
 
 Es un elemento para ingresar textos más largos. Tiene etiqueta de apertura y de cierre. Si queremos darle un valor predeterminado debemos ponerlo entre éstas.
+
+## Dando estilo al Formulario con Bootstrap 4
+
+Bootstrap nos permite dar estilo a los formularios con diferentes clases. En este tutorial veremos un breve ejemplo de estilos con esta librería.
+
+Para conocer más ver la [documentación de formularios](https://getbootstrap.com/docs/4.0/components/forms/)
+
+Para ejemplos ver `bootstrap-forms.html`
