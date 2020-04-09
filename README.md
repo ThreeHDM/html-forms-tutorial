@@ -37,19 +37,19 @@ Si refrescamos la página veremos que nada ha pasado ya que la etiqueta `<form>`
 
 **INPUT TAG**
 
-Las etiquetas de tipo input se componen de muchos tipos (texto, mail, contraseña, etc.), para asignarle uno utilizamos el atributo `type`. Este es su valor default, pero de todas maneras es recomendable especificar el tipo de campo. Ya veremos más sobre esto.
+Las etiquetas de tipo input se componen de muchos tipos (texto, mail, contraseña, etc.), para asignarle uno utilizamos el atributo `type`. El tipo texto es su valor default, pero de todas maneras es recomendable especificar el tipo de campo. Ya veremos más sobre esto.
 
 En nuestro ejemplo usaremos inputs de tipo `text` y `password`. Este último permite ocultar los caracteres que tipea el usuario en la interface gráfica.
 
 Como podemos tener muchas etiquetas de este tipo debemos nombrarlas con el atributo `name`.
 
-Los inputs pueden tener un valor predeterminado. Para especificarlo usamos el atributo `value="valor_predeterminado"`
+Los inputs pueden tener un valor predeterminado. Para especificarlo usamos el atributo value y le asignamos un valor `value="valor_predeterminado"`
 
 ```html
     <input type="text" name="name" id="name" value="User">
 ```
 
-Podemos ayudar al usuario informándolo lo que queremos que ingrese en nuestro input. Para ello utilizamos el atributo `placeholder`, el cual ingresa un texto sugerido en el campo.
+Podemos ayudar al usuario informándole lo que queremos que ingrese en nuestro input. Para ello utilizamos el atributo `placeholder`, el cual ingresa un texto sugerido en el campo.
 
 ```html
     <input type="text" name="name" id="name" placeholder="User Name">
@@ -57,7 +57,7 @@ Podemos ayudar al usuario informándolo lo que queremos que ingrese en nuestro i
 
 En muchas ocasiones existe información que es requerida por nuestra aplicación para que el usuario pueda continuar. Como por ejemplo una contraseña y/o nombre de usuario. El usuario no puede avanzar si no brinda esos datos.
 
-Para esos casos utilizamos el atributo `required` que en HTML5 no permite que se envíe el formulario hasta tanto esté completo ese campo.
+Para esos casos utilizamos el atributo `required`, que no permite que se envíe el formulario hasta tanto esté completo ese campo.
 
 ```html
     <input type="text" name="name" id="name" placeholder="User Name" required>
@@ -67,11 +67,9 @@ Para esos casos utilizamos el atributo `required` que en HTML5 no permite que se
 
 Como queremos ayudar al usuario a comprender lo que tiene que hacer en nuestra aplicación, le daremos una pista sobre qué datos o acciones debe ingresar/realizar en nuestro formulario. Para ello utilizaremos la etiqueta `<label></label>`, que funciona como un título para cada input.
 
-Los labels tienen un atributo llamado `for`, en el que especificamos a qué input pertenece. Esto sirve tanto para que el navegador comprenda a que input y form pertenece el label como también para Screen Readers.
+Los labels tienen un atributo llamado `for`, en el que especificamos a qué input pertenece. Esto sirve tanto para que el navegador comprenda a qué input y form pertenece el label como también para Screen Readers.
 
-Para ello debemos especificar en él, el id del elemento al que apunta.
-
-Ahora al hacer click en el label se seleccionará el campo a completar.
+El valor del atributo `for` es el id del elemento al que apunta. Así ,al hacer click en el label, se seleccionará el campo a completar.
 
 **BUTTON TAG**
 
@@ -97,7 +95,7 @@ El formulario quedaría así
 
 Pero este formulario, si bien contiene los elementos básicos aún está lejos de estar terminado.
 
-Si presionamos el botón en este momento veremos que ser refresca la página. Es decir, estamos enviando la información a la misma página en donde se encuentra el formulario. Nosotros queremos enviar la información a otra parte.
+Si presionamos el botón en este momento veremos que se refresca la página. Es decir, estamos enviando la información a la misma página en donde se encuentra el formulario. Nosotros queremos enviar la información a otra parte.
 
 Para especificar a dónde enviamos la información utilizamos el atributo `action` dentro de la etiqueta form. En él escribimos la URL a la cual se dirigirá la información.
 
@@ -117,7 +115,7 @@ IMPORTANTE: COPIA TU URL y no uses la del ejemplo!!!
 </form>
 ```
 
-Antes de continuar, probá tu formulario. Verás que en webhoo.site se capturará la información enviada y se detallarán los headers de tu petición HTTP.
+Antes de continuar, probá tu formulario. Verás que en webhook.site se capturará la información enviada y se detallarán los headers de tu petición HTTP.
 
 ## Métodos de petición HTTP
 
@@ -190,20 +188,20 @@ Podemos elegir una o todas las checkboxes del formulario. Para elegir una o la o
 
 ```html
 <div>
-            Género
-            <div>
-                <label for="genero">Masculino</label>
-                <input type="radio" name="genero" id="masculino" value="masculino">
-            </div>
-            <div>
-                <label for="genero">Femenino</label>
-                <input type="radio" name="genero" id="femenino" value="femenino">
-            </div>
-            <div>
-                <label for="genero">Otro</label>
-                <input type="radio" name="genero" id="otro" value="otro">
-            </div>
-        </div>
+    Género
+    <div>
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+    </div>
+    <div>
+        <label for="genero">Femenino</label>
+        <input type="radio" name="genero" id="femenino" value="femenino">
+    </div>
+    <div>
+        <label for="genero">Otro</label>
+        <input type="radio" name="genero" id="otro" value="otro">
+    </div>
+</div>
 ```
 
 Podemos elegir solo un valor de las 3 opciones. 
